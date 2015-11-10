@@ -6,3 +6,9 @@ n_odd <- 4
 
 socks <- rep( seq_len(n_pairs + n_odd), rep(c(2, 1), c(n_pairs, n_odd)) )
 socks
+
+picked_socks <- sample(socks, size =  min(n_picked, n_socks))
+picked_socks
+
+sock_counts <- table(picked_socks)
+sock_counts
